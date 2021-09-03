@@ -1,8 +1,8 @@
 ===================
-Transfer Set To Draft
+Example Set To Draft
 ===================
 
-This module is implementation of `Base Set to Draft <https://github.com/amirul-m/public-odoo-apps/tree/14.0/base_set_to_draft>`_. Add button Set to Draft on Transfer
+This module is implementation of `Base Set to Draft <https://github.com/amirul-m/public-odoo-apps/tree/14.0/base_set_to_draft>`_. Add button Set to Draft on Form
 
 **Table of contents**
 

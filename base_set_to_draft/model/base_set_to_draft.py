@@ -25,5 +25,9 @@ class BaseSetToDraft(models.AbstractModel):
                     # add new button before the first button (if exist)
                     node.addprevious(new_element)
 
-            res['arch'] = etree.tostring(doc, encoding='unicode')
+            View = self.env["ir.ui.view"]
+            if view_id and res.get("base_model", self._name) != self._name:
+                View = View.with_context(base_model_name=res["base_model"])
+            new_arch, new_fields = View.postprocess_and_fields(doc, self._name)
+            res["arch"] = new_arch
         return res
