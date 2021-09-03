@@ -2,17 +2,15 @@
 Base Set To Draft
 ===================
 
-Many document model that already has been cancelled may also want change back to draft.
-It is painful if we have to code one by one the functionality button.
+Many document model that has been cancelled may also want change back to draft.
+It is painful if we have to code one by one the button and its functionality.
 
-This module does not provide a functionality by itself but an abstract model.
+This module does not provide a functionality by itself but an Abstract model.
 
 **Note:** To be able to use this module in a new model you will need some
-development.
+development. You can see implementation example as followings,
 
-You can see implementation example as followings,
-
-* `picking_set_to_draft <https://github.com/amirul-m/public-odoo-apps/tree/14.0/base_set_to_draft>`_
+* `picking_set_to_draft <https://github.com/amirul-m/public-odoo-apps/tree/14.0/picking_set_to_draft>`_
 
 **Table of contents**
 
@@ -35,9 +33,9 @@ Credits
 Authors
 ~~~~~~~
 
-* Amirul
+* `Amirul <http://linkedin.com/in/amirulm>`_
 
 
-This module is part of the `OCA/server-ux <https://github.com/amirul-m/public-odoo-apps/tree/14.0/base_set_to_draft>`_ project on GitHub.
+This module is part of the `amirul-m/public-odoo-apps <https://github.com/amirul-m/public-odoo-apps/tree/14.0/base_set_to_draft>`_ project on GitHub.
 
 You are welcome to contribute.
