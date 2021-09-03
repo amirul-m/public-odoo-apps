@@ -10,7 +10,7 @@ This module does not provide a functionality by itself but an Abstract model.
 **Note:** To be able to use this module in a new model you will need some
 development. You can see implementation example as followings,
 
-* `picking_set_to_draft <https://github.com/amirul-m/public-odoo-apps/tree/14.0/picking_set_to_draft>`_
+* `Transfer Set to Draft <https://github.com/amirul-m/public-odoo-apps/tree/14.0/picking_set_to_draft>`_
 
 **Table of contents**
 
