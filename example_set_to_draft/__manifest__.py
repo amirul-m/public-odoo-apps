@@ -1,5 +1,5 @@
 {
-    "name": "Transfer Set To Draft",
+    "name": "Example Set To Draft",
     "version": "14.0.1.0.0",
     "author": "Amirul",
     "category": "Extra Tools",
