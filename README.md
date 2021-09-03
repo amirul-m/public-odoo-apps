@@ -11,3 +11,5 @@
 | base_set_to_draft | Base for button Set To Draft | 14.0.1.0.0 | B | Beta |
 | picking_set_to_draft | Add button Set To Draft on Transfer form | 14.0.1.0.0 | I | Beta |
 | split_transfer_menu | Split Transfer menu by type | 14.0.1.0.0 | I | Beta |
+
+**Author by:** [Amirul](http://linkedin.com/in/amirulm)

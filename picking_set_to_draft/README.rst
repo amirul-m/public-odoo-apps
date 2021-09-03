@@ -28,6 +28,6 @@ Authors
 * `Amirul <http://linkedin.com/in/amirulm>`_
 
 
-This module is part of the `amirul-m/public-odoo-apps <https://github.com/amirul-m/public-odoo-apps/tree/14.0/base_set_to_draft>`_ project on GitHub.
+This module is part of the `amirul-m/public-odoo-apps <https://github.com/amirul-m/public-odoo-apps>`_ project on GitHub.
 
 You are welcome to contribute.
