@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="set_to_draft_template">
+        <div>
+            <button name="set_to_draft" type="object" string="Set To Draft" class="btn btn-primary"
+                    attrs="{'invisible': [('state', '!=', 'cancel')]}"/>
+        </div>
+    </template>
+</odoo>

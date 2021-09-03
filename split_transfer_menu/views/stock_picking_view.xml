@@ -1,0 +1,76 @@
+<odoo>
+
+    <record id="picking_search" model="ir.ui.view">
+        <field name="name">stock.picking.search</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_internal_search"/>
+        <field name="arch" type="xml">
+            <search position="inside">
+                <filter name="picking_incoming_filter" string="Receipts"
+                        invisible="1" domain="[('picking_type_id.code', '=', 'incoming')]"/>
+                <filter name="picking_outgoing_filter" string="Delivery Orders"
+                        invisible="1" domain="[('picking_type_id.code', '=', 'outgoing')]"/>
+                <filter name="picking_internal_filter" string="Internal Transfers"
+                        invisible="1" domain="[('picking_type_id.code', '=', 'internal')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_picking_tree_incoming" model="ir.actions.act_window">
+        <field name="name">Receipts</field>
+        <field name="res_model">stock.picking</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,kanban,form,calendar</field>
+        <field name="context">{'search_default_picking_incoming_filter': 1}</field>
+        <field name="search_view_id" ref="stock.view_picking_internal_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No transfer found. Let's create one!
+            </p>
+        </field>
+    </record>
+
+    <record id="action_picking_tree_outgoing" model="ir.actions.act_window">
+        <field name="name">Delivery Orders</field>
+        <field name="res_model">stock.picking</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,kanban,form,calendar</field>
+        <field name="context">{'search_default_picking_outgoing_filter': 1}</field>
+        <field name="search_view_id" ref="stock.view_picking_internal_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No transfer found. Let's create one!
+            </p>
+        </field>
+    </record>
+
+    <record id="action_picking_tree_internal" model="ir.actions.act_window">
+        <field name="name">Internal Transfers</field>
+        <field name="res_model">stock.picking</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,kanban,form,calendar</field>
+        <field name="context">{'search_default_picking_internal_filter': 1}</field>
+        <field name="search_view_id" ref="stock.view_picking_internal_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No transfer found. Let's create one!
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="picking_incoming_menu" name="Receipts"
+              parent="stock.all_picking" sequence="6"
+              action="action_picking_tree_incoming"
+              groups="stock.group_stock_manager,stock.group_stock_user"/>
+
+    <menuitem id="picking_outgoing_menu" name="Delivery Orders"
+              parent="stock.all_picking" sequence="8"
+              action="action_picking_tree_outgoing"
+              groups="stock.group_stock_manager,stock.group_stock_user"/>
+
+    <menuitem id="picking_internal_menu" name="Internal Transfers"
+              parent="stock.all_picking" sequence="7"
+              action="action_picking_tree_internal"
+              groups="stock.group_stock_manager,stock.group_stock_user"/>
+
+</odoo>
