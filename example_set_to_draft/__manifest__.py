@@ -4,7 +4,7 @@
     "author": "Amirul",
     "category": "Extra Tools",
     "website": "http://linkedin.com/in/amirulm",
-    "depends": ['stock', 'base_set_to_draft'],
+    "depends": ['stock', 'mrp', 'base_set_to_draft'],
     "data": [
     ],
     "auto_install": False,
