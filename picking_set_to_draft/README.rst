@@ -25,7 +25,7 @@ Credits
 Authors
 ~~~~~~~
 
-* `Amirul <http://linkedin.com/in/amirulm>`_
+* `Amirul <https://linkedin.com/in/amirulm>`_
 
 
 This module is part of the `amirul-m/public-odoo-apps <https://github.com/amirul-m/public-odoo-apps>`_ project on GitHub.
