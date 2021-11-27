@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="button_confirm_template">
+        <div>
+            <button name="action_confirm" type="object" string="Konfirmasi" class="btn btn-primary"
+                    attrs="{'invisible': [('state', '!=', 'draft')]}"/>
+        </div>
+    </template>
+
+    <template id="button_draft_template">
+        <div>
+            <button name="action_draft" type="object" string="Set To Draft" class="btn btn-primary"
+                    attrs="{'invisible': [('state', '!=', 'cancel')]}"/>
+        </div>
+    </template>
+
+    <template id="button_cancel_template">
+        <div>
+            <button name="action_cancel" type="object" string="Cancel" class="btn btn-primary"
+                    attrs="{'invisible': [('state', 'not in', ['draft', 'confirmed'])]}"/>
+        </div>
+    </template>
+</odoo>
